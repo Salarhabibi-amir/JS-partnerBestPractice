@@ -40,7 +40,7 @@ tasks.forEach((task) => {
           const delteIndex = task.firstChild.firstChild.getAttribute('id');
           removeTask(delteIndex);
           window.location.reload();
-          // console.log(task.firstChild.firstChild);
+        
         });
       }
     });
@@ -50,7 +50,6 @@ tasks.forEach((task) => {
 const taskblur = document.querySelectorAll('.list-element');
 taskblur.forEach((task) => {
   task.addEventListener('blur', () => {
-    // task.contentEditable=true;
     const child1 = task.firstChild;
     const child2 = child1.lastChild;
     const editedtext = child2.innerText;
