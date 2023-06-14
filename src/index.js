@@ -40,7 +40,6 @@ tasks.forEach((task) => {
           const delteIndex = task.firstChild.firstChild.getAttribute('id');
           removeTask(delteIndex);
           window.location.reload();
-        
         });
       }
     });
